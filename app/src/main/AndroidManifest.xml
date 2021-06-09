@@ -2,23 +2,41 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cetis108.semana11">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_mylauncher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_mylauncher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Semana11">
+        <activity android:name=".ContactActivity2"></activity>
+        <activity android:name=".ContactActivity1" />
+        <activity
+            android:name=".ContactActivity2"
+            android:parentActivityName=".ContactActivity1"></activity>
+        <activity
+            android:name=".ContactActivity1"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PhoneActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AgeActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SmsActivity"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmsActivity">
+
+    <EditText
+        android:hint="Teléfono"
+        android:id="@+id/editTextSmsPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="106dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:hint="Mensaje"
+        android:id="@+id/editTextSmsBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSmsPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/editTextSmsPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSmsPhoneNumber" />
+
+    <Button
+        android:onClick="sendMessage"
+        android:id="@+id/buttonSmsSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="83dp"
+        android:text="Enviar"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSmsBody"
+        app:layout_constraintStart_toStartOf="@+id/editTextSmsBody"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSmsBody" />
+</androidx.constraintlayout.widget.ConstraintLayout>

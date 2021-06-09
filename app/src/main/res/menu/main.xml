@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="SMS" android:id="@+id/itemMenuMainSms" />
+    <item android:title="Edad" android:id="@+id/itemMenuMainAge" />
+    <item android:title="Telefonía" android:id="@+id/itemMenuMainPhone" />
+    <item android:title="Cámara" android:id="@+id/itemMenuMainCamera" />
+    <item android:title="Registro" android:id="@+id/itemMenuMainRegister" />
+</menu>
